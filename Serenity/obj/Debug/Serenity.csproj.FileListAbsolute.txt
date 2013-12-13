@@ -1,0 +1,17 @@
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\bin\Debug\Serenity.exe.config
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\bin\Debug\Serenity.exe
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\bin\Debug\Serenity.pdb
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\obj\Debug\Serenity.csprojResolveAssemblyReference.cache
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\obj\Debug\Serenity.exe
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\obj\Debug\Serenity.pdb
+C:\Users\Gil\AppData\Local\Temporary Projects\Serenity\bin\Debug\Mysql.Data.dll
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\Serenity.exe.config
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\obj\Debug\Serenity.exe
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\obj\Debug\Serenity.pdb
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\obj\Debug\Serenity.csprojResolveAssemblyReference.cache
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\lz4_32.dll
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\lz4_64.dll
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\Serenity.exe
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\Serenity.pdb
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\reNX.dll
+C:\Users\Gil\Documents\Visual Studio 2012\Projects\Serenity\Serenity\bin\Debug\reNX.pdb

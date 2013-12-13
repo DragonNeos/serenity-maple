@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C48AE98-72AA-4156-8D8B-F902A35F960E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Serenity</RootNamespace>
+    <AssemblyName>Serenity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mysql.Data">
+      <HintPath>..\..\..\..\Mysql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\Acceptor.cs" />
+    <Compile Include="Connection\SocketEventArgs.cs" />
+    <Compile Include="Other\Logger.cs" />
+    <Compile Include="Server\Constants.cs" />
+    <Compile Include="Data\CheatInspector.cs" />
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="Data\MigrateRequest.cs" />
+    <Compile Include="Data\Pair.cs" />
+    <Compile Include="Data\PlayerRandomStream.cs" />
+    <Compile Include="Game\AbsoluteLifeMovement.cs" />
+    <Compile Include="Game\AbstractLifeMovement.cs" />
+    <Compile Include="Game\Data\Buff.cs" />
+    <Compile Include="Game\LifeMovement.cs" />
+    <Compile Include="Game\LifeMovementFragment.cs" />
+    <Compile Include="Game\MovementParse.cs" />
+    <Compile Include="Game\Objects\Drop.cs" />
+    <Compile Include="Game\Objects\Equip.cs" />
+    <Compile Include="Game\Objects\Item.cs" />
+    <Compile Include="Game\Objects\Map.cs" />
+    <Compile Include="Game\Objects\Mob.cs" />
+    <Compile Include="Game\Objects\MoveableLife.cs" />
+    <Compile Include="Game\Objects\Pet.cs" />
+    <Compile Include="Other\LoopingID.cs" />
+    <Compile Include="Other\Randomizer.cs" />
+    <Compile Include="Other\Tools.cs" />
+    <Compile Include="Packet\CashShopPacket.cs" />
+    <Compile Include="Packet\CharacterStatsPacket.cs" />
+    <Compile Include="Packet\GeneralPacket.cs" />
+    <Compile Include="Packet\Handlers\CashShopHandler.cs" />
+    <Compile Include="Packet\Handlers\GameHandler.cs" />
+    <Compile Include="Packet\Handlers\InterserverHandler.cs" />
+    <Compile Include="Packet\HelpPacket.cs" />
+    <Compile Include="Packet\LoginPacket.cs" />
+    <Compile Include="Packet\MobPacket.cs" />
+    <Compile Include="Packet\MapPacket.cs" />
+    <Compile Include="Server\CashShop.cs" />
+    <Compile Include="Server\Channel.cs" />
+    <Compile Include="Server\Master.cs" />
+    <Compile Include="Server\World.cs" />
+    <Compile Include="User\Account.cs" />
+    <Compile Include="User\Character.cs" />
+    <Compile Include="User\Character Modifiers.cs" />
+    <Compile Include="User\Client.cs" />
+    <Compile Include="Game\CommandProcessor.cs" />
+    <Compile Include="Connection\AbstractConnection.cs" />
+    <Compile Include="Connection\GMSKeys.cs" />
+    <Compile Include="Connection\Packet.cs" />
+    <Compile Include="Connection\Session.cs" />
+    <Compile Include="Data\Database\Accessor.cs" />
+    <Compile Include="Data\Database\MySQL Connection.cs" />
+    <Compile Include="Packet\Handlers\LoginHandler.cs" />
+    <Compile Include="Packet\Opcodes.cs" />
+    <Compile Include="Packet\PacketProcessor.cs" />
+    <Compile Include="Server\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\Login.cs" />
+    <Compile Include="User\Inventory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Server\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ms-reNX-master\reNX.csproj">
+      <Project>{0f5c5f44-238a-45f2-95af-a1936949aef2}</Project>
+      <Name>reNX</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
